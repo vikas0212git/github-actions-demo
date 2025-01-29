@@ -8,7 +8,7 @@ pipeline {
     }
     stage('run the entire pipeline') {
       steps {
-        sh 'act'
+        sh 'act -P image=catthehacker/ubuntu:full-22.04'
       }
     }
     stage('view the executive graph') {
