@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('verify act installation') {
       steps {
-        bat 'act --version'
+        sh 'act --version'
       }
     }
     stage('run the entire pipeline') {
       steps {
-        bat 'act'
+        sh 'act'
       }
     }
     stage('view the executive graph') {
